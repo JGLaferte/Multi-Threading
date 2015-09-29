@@ -7,3 +7,6 @@ C:\Users\Jean-Gab\Documents\GitHub\AshycMultiThreadingProject\AshycMultiThreadin
 C:\Users\Jean-Gab\Documents\GitHub\AshycMultiThreadingProject\AshycMultiThreadingProject\obj\Debug\AshycMultiThreadingProject.csproj.GenerateResource.Cache
 C:\Users\Jean-Gab\Documents\GitHub\AshycMultiThreadingProject\AshycMultiThreadingProject\obj\Debug\AshycMultiThreadingProject.exe
 C:\Users\Jean-Gab\Documents\GitHub\AshycMultiThreadingProject\AshycMultiThreadingProject\obj\Debug\AshycMultiThreadingProject.pdb
+C:\Users\Jean-Gab\Documents\GitHub\Multi-Threading\AshycMultiThreadingProject\bin\Debug\AshycMultiThreadingProject.exe.config
+C:\Users\Jean-Gab\Documents\GitHub\Multi-Threading\AshycMultiThreadingProject\obj\Debug\AshycMultiThreadingProject.exe
+C:\Users\Jean-Gab\Documents\GitHub\Multi-Threading\AshycMultiThreadingProject\obj\Debug\AshycMultiThreadingProject.pdb
