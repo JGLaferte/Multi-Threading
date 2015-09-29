@@ -1,76 +1,41 @@
 # Multi-Threading #
 ----------
-## Why?  ##
-### **1.Keep a Process Responsive**  ###
 
-Everyone has already made the acquaintance of a program that when a button activated the entire program freeze. 
-
-This problem is created by using only one thread. Basically the program waits until the thread is released to 
-
-continue. Multithreading avoided this problem by allowing to use multiple thread.
-
-### **2.Keep a Processor Busy** ###
-
-If a processor has no task to perform, he does nothing, so why not using it?
-
-## Understand the program ? ##
-
-### To understand the program you needs some basic knowledge on C # Library and threading. ###
-
-#### **1.Asynchronous/Synchronous** ####
-
-In the code where an **asynchronous** thread is run to perform a task, the thread is simply started and the code 
-
-perform normally. But if it a **synchronous** thread program code will continue only after the task is finished. The 
-
-two methods are useful depending on the situation.
-
-#### **2.Thread Pool** ####
-
-C# class that represent a collection of Asynchronous task that is queued one father the other.
-
-#### **3.Task** ####
-
-C# class that an asynchronous operation.
-
-#### **4.asyc/await** ####
-
-Key word for making an Asynchronous thread more Synchronous. Making the code wait until de task is completed to 
-
-continue.
-
-## Objective of the program ? ##
-### 1. **Educational** ###
-
-I did this program for an educational purpose. Feel free to use it, modify it or simply analyse it.
-
-### 2. **Easy to understand Code** ###
-
-Well commented and short and straight forward function.
-
-### 3. **Compare single and multi threading** ###
-
-You can test both with a timer, at the same time or not in the program. Obviously the speed will be difference for everyone in function of the computer used to run the program. (Number of core)
-
-## Danger? ##
-### 1. **Complexity** ###
-
-Managing Multi-thread can add a lot of complexity in the code of a program. Only use it if the performance boost worth the added complexity. It usually worth in heavy possessing program, not in light one.
-
-### 2. **Safety** ###
-
-IF you don't know what you are doing it can cause lot of problem and bug hard to solve in a program. one of the 
-
-more common is cross-thread with the UI. When you try to do something with the UI (for example updating a label)
-
-if you start a task for doing it you can't update the graphic of the label without interfering with the UI thread.
-
-Typically in this situation we use the keyword "Invoke" for calling the method update from the UI thread.
-
-## Example ?##
-It all well commented , go ahead and download it.
+## What is the program? ##
 
 ![](https://raw.githubusercontent.com/JGLaferte/Multi-Threading/master/AshycMultiThreadingProject/Img/MultiThreading.gif)
 
+It a visual studio project in c# design to compare multi-threading and single threading. Each method execute the exact same process and the time elapse is compared to see which method is the faster. 
+## Why I’ve made the program ?##
 
-Feel free to follow my git, more will come.
+I’ve made this program for an educational purpose. I think you learn a lot faster by simple looking clear, well wrote, well commented and simple code. I think that one source code worth 1 000 explication.
+
+
+## What to know ? ##
+
+To understand the project you need to understand the basic of multithreading in c#.
+
+- Task ->[https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx ](https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx )
+
+- Difference between asynchronous  and synchronous threads. >[http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean](http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean)
+
+- Thread Pool ->[https://msdn.microsoft.com/en-us/library/windows/desktop/ms686760(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686760(v=vs.85).aspx)
+
+- async/await keyword ->[https://msdn.microsoft.com/en-us/magazine/jj991977.aspx](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx)
+
+
+## Why learning multithreading ? ##
+
+Multi-threading is a really useful think to know and understand. 
+First for processes usage, most of the computer now a day have multicore (even cell phone). Multi-threading is design to take advantage of the number of core a machine have. It allow your computer to do multiple task in the same time and use all core when u need it.
+
+Second it make everything more responsive. For example, if you have to do some processing in the background and also remain responsive to UI input, you can use multiple threads. Without it, the user interface would hang every time you tried to do any heavy processing.
+
+## Danger of multi-threading? ##
+
+This is the big possible cons of it. Multi-threading add lot of complexity to your work and lot of possible problem/bug.
+The most common is cross-threading (A cross-thread operation in C# is a call that accesses components from a different thread.) For example, if u call the update() method of a control like a label on a different thread other than the UI ,it will raise u an cross threading error. Most comment work around this is using some invoke() or Lock() method.
+
+## When using Multi-threading? ##
+
+You simply use it when it worth it. Multi-threading Help heavily when u need to do some heavy processing. If you have a very light processing program it not very worth it to add that much complexity for a not noticeable change. If your client want a more responsive design it could worth it. Simple as that.
