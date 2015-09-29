@@ -1,41 +1,42 @@
-# Multi-Threading #
+# Multithreading #
 ----------
 
-## What is the program? ##
+## Description ##
 
 ![](https://raw.githubusercontent.com/JGLaferte/Multi-Threading/master/AshycMultiThreadingProject/Img/MultiThreading.gif)
 
-It a visual studio project in c# design to compare multi-threading and single threading. Each method execute the exact same process and the time elapse is compared to see which  is the faster. 
-## Why I’ve made the program ?##
+It is a Visual Studio project in C# to compare multithreaded and single threaded applications. Each method executes the same number of processes and the time elapse is compared to see which one is the fastest. 
 
-I’ve made this program for an educational purpose. I think you learn a lot faster by simple looking clear, well wrote, well commented and simple code. I think that one source code worth 1 000 explication.
+## Why I’ve made this program ? ##
+
+I have made this program mainly for an educational purpose. I think you will learn a lot faster by simply looking at this simple and efficient code. I think that reading the code is worth a lot more than elaborated explication.
 
 
-## What to know ? ##
+## What you need to know ##
 
-To understand the project you need to understand the basic of multithreading in c#.
+To understand the project you need to understand the basics of multithreading in C#.
 
-- Task ->[https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx ](https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx )
+- Tasks ->[https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx ](https://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx )
 
-- Difference between asynchronous  and synchronous threads. >[http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean](http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean)
+- Difference between asynchronous and synchronous threads. >[http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean](http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean)
 
 - Thread Pool ->[https://msdn.microsoft.com/en-us/library/windows/desktop/ms686760(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686760(v=vs.85).aspx)
 
-- async/await keyword ->[https://msdn.microsoft.com/en-us/magazine/jj991977.aspx](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx)
+- Async/Await Keywords ->[https://msdn.microsoft.com/en-us/magazine/jj991977.aspx](https://msdn.microsoft.com/en-us/magazine/jj991977.aspx)
 
 
-## Why learning multithreading ? ##
+## Why should you learning multithreading ##
 
-Multi-threading is a really useful think to know and understand. 
-First for processes usage, most of the computer now a day have multicore (even cell phone). Multi-threading is design to take advantage of the number of core a machine have. It allow your computer to do multiple task in the same time and use all core when u need it.
+Multithreading is a really useful concept to know and understand. 
+First for computing efficiency, most of the computers nowadays have multiple cores even on cell phones. Multithreading is designed to take advantage of all the cores of a processor. It allows your computer to do multiple tasks at the same time and use all cores of your computer.
 
-Second it make everything more responsive. For example, if you have to do some processing in the background and also remain responsive to UI input, you can use multiple threads. Without it, the user interface would hang every time you tried to do any heavy processing.
+Secondly it makes everything more responsive. For example, if you have to do some processing in the background and keep the UI responsive to inputs you can use a thread for processing another for the UI. If the UI and processing use the same thread, the user interface will hang every time you try to do any processing.
 
-## Danger of multi-threading? ##
+## Danger of multithreading ##
 
-This is the big possible cons of it. Multi-threading add lot of complexity to your work and lot of possible problem/bug.
-The most common is cross-threading (A cross-thread operation in C# is a call that accesses components from a different thread.) For example, if u call the update() method of a control like a label on a different thread other than the UI ,it will raise u an cross threading error. Most comment work around this is using some invoke() or Lock() method.
+Multithreading does not come only with advantages. It adds complexity to your work and it is a possible source of problems and bugs if not done properly.
+The most common problem is cross-threading issues. A cross-thread operation in C# is a call that accesses components from a different thread. For example, if you call the update() method of a control like a label from a different thread than the UI thread it will raise a cross-thread error. Most common workaround is using the invoke() or lock() method.
 
-## When using Multi-threading? ##
+## When should you use multithreading ##
 
-You simply use it when it worth it. Multi-threading Help heavily when u need to do some heavy processing. If you have a very light processing program it not very worth it to add that much complexity for a not noticeable change. If your client want a more responsive design it could worth it. Simple as that.
+You should use it when it is worth it. Multithreading makes a huge difference when you need to do some heavy processing. If you have a very light processing program it not really worth it to add complexity for an unnoticeable change. If your client wants a more responsive design it is worth it. Simple as that.
