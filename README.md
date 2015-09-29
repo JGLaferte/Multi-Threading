@@ -5,7 +5,7 @@
 
 ![](https://raw.githubusercontent.com/JGLaferte/Multi-Threading/master/AshycMultiThreadingProject/Img/MultiThreading.gif)
 
-It a visual studio project in c# design to compare multi-threading and single threading. Each method execute the exact same process and the time elapse is compared to see which method is the faster. 
+It a visual studio project in c# design to compare multi-threading and single threading. Each method execute the exact same process and the time elapse is compared to see which  is the faster. 
 ## Why I’ve made the program ?##
 
 I’ve made this program for an educational purpose. I think you learn a lot faster by simple looking clear, well wrote, well commented and simple code. I think that one source code worth 1 000 explication.
